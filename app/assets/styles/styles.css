@@ -1,3 +1,12 @@
-h1 {
-    color: green;
-}
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+@import "modules/_wrapper";
+@import "modules/_header";
+@import "modules/_slider";
+@import "modules/_about";
+@import "modules/_mvs";
+@import "modules/_hero-section";
+@import "modules/_contact";
+@import "modules/_footer";
+@import "modules/_animate";

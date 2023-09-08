@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -5,4 +13,71 @@ img {
 
 * {
     box-sizing: border-box;
+}
+
+p {
+    font-size: 1.2rem;
+    @mixin atMedium {
+        font-size: 1.3rem;
+    }
+}
+
+h1 {
+    font-size: 1.6rem;
+    @mixin atMedium {
+        font-size: 2.8rem;
+        color: $gold;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4rem;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Niconne';
+    color: $gold;
+
+    @mixin atMedium {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+}
+
+h3 {
+    color: $darkpurple;
+    font-size: 1.3rem;
+
+    @mixin atMedium {
+        font-size: 2rem;
+    }
+}
+
+.splash {
+    background: linear-gradient(45deg, $lightpurple, $darkpurple, $black);
+    text-align: center;
+    margin: 2rem 0;
+
+    @mixin atMedium {
+        margin: 0 0 4rem 0;
+    }
+
+    &__img {
+        width: 120px;
+
+        @mixin atMedium {
+            width: 200px;
+        }
+    }
+}
+
+.p-20 {
+    padding: 1.25rem;
+}
+
+@mixin atMedium {
+    #services, #mvs {
+        scroll-margin-top: 2rem;
+    }
 }

@@ -1,0 +1,65 @@
+#contact {
+    background: url('./assets/images/contact-bg.jpg') no-repeat center;
+    background-size: 100% 100%;
+    @mixin atMedium {
+        background-size: cover;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-bottom: 1rem;
+
+        label {
+            padding: .75rem 0;
+            color: $gold;
+            font-size: 1rem;
+            @mixin atMedium {
+                font-size: 1.19rem;
+            }
+        }
+
+        &__input {
+            border: none;
+            outline: none;
+            padding: .30rem .70rem;
+
+            @mixin atMedium {
+                padding: .75rem 1.4rem;
+            }
+        }
+
+        &__btn {
+            margin-top: 3rem;
+            background-color: $lightpurple;
+            color: $gold;
+            padding: 0.7rem 1.6rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: none;
+            transition: transform .5s ease-out;
+            font-family: 'EB Garamond', serif;
+            cursor: pointer;
+            align-self: center;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+

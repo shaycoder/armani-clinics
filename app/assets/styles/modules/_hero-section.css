@@ -1,0 +1,54 @@
+.hero-section {
+    &__image {
+        @mixin atMedium {
+            flex: 0 0 50%;
+            align-self: center;
+            justify-self: center;
+            width: 80vw;
+            padding: 2rem 4rem;
+        }
+    }
+
+    .service-image img {
+        box-shadow: 10px 10px 5px rgba($black, .1);
+    }
+
+    &__desc {
+        flex: auto;
+
+        @mixin atMedium {
+            flex: 0 0 50%;
+        }
+
+        h3 {
+            margin-top: 1.2rem;
+
+            @mixin atMedium {
+                margin-top: 0;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            padding: 10px;
+            font-size: 1.2rem;
+            line-height: 1.4;
+
+            @mixin atMedium {
+                font-size: 1.3rem;
+            }
+        }
+
+        .fa-li {
+            color: $gold;
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    }
+}
