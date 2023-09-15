@@ -1,3 +1,4 @@
 .mvs {
     text-align: center;
+    background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);
 }

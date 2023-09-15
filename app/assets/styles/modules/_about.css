@@ -1,6 +1,66 @@
-.about {
-    background: #f7f7f7;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.about-section {
+    background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);  
+    
+    &__image {
+        @mixin atMedium {
+            flex: 0 0 50%;
+            align-self: center;
+            justify-self: center;
+            width: 80vw;
+            padding: 2rem 4rem;
+        }
+        
+        img {
+            transition: transform 1s ease-out;
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+
+    &__desc {
+        flex: auto;
+
+        @mixin atMedium {
+            flex: 0 0 50%;
+        }
+
+        h3 {
+            margin-top: 1.2rem;
+            color: $gold;
+
+            @mixin atMedium {
+                margin-top: 0;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            font-family: 'Lato', sans-serif;
+            padding: 10px;
+            font-size: 1.05rem;
+            line-height: 1.6;
+
+            @mixin atMedium {
+                font-size: 1.1rem;
+            }
+            color: $white;
+            font-weight: 500;
+
+        }
+
+        .fa-li {
+            @mixin textGradient;
+
+            &:hover {   
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    }
 }

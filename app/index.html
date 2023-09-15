@@ -6,7 +6,7 @@
     <title>Armani Clinics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=Niconne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=Niconne&family=Lato&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
@@ -23,6 +23,10 @@
     <script src="https://kit.fontawesome.com/0febe8b076.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="loader">
+        <img class="logo-loader" src="assets/images/logo.png" alt="Armani Clinics Logo">
+    </div>
+    <div class="whole-section">
     <header class="site-header" id="top">
         <div class="site-header__logo">
             <img src="assets/images/logo.png" alt="Armani Clinics Logo">
@@ -30,13 +34,13 @@
         <nav class="site-header__nav">
             <ul>
                 <li><a class="menu-element" id="home-link" href="#home">Home</a></li>
-                <li><a class="menu-element" id="about-link" href="#about">About us</a></li>
-                <li><a class="menu-element" id="mvs-link" href="#mvs">Vision & Mission</a></li>
+                <li><a class="menu-element" id="about-link" href="about.html">About us</a></li>
+                <li><a class="menu-element" id="mvs-link" href="mission-vision.html">Vision & Mission</a></li>
                 <li><a class="menu-element" id="services-link" href="#services">Services</a></li>
             </ul>
         </nav>
         <span class="btn-wrap">
-            <a href="#contact" class="btn">Contact Us</a>
+            <a href="contact.html" class="btn">Contact Us</a>
         </span>
 
         <div class="site-header__menu-icon">
@@ -55,7 +59,7 @@
                 </div>
               </div>
               <div class="image-container"> 
-                <img src="assets/images/clinic-img2.jpg" alt="" class="image" />
+                <img src="assets/images/img1.jpg" alt="" class="image" />
               </div>
             </div>
             <div class="slide">
@@ -65,7 +69,7 @@
                 </div>
               </div>
               <div class="image-container">
-                <img src="assets/images/clinic-img1.jpg" alt="" class="image" />
+                <img src="assets/images/img2.jpg" alt="" class="image" />
               </div>
             </div>
           </div>
@@ -92,68 +96,19 @@
             </div>
           </div>
         </div> 
-    </section>
+    </section> 
 
-    <section class="slide-image">
-        <img src="assets/images/clinic-img2.jpg" alt="Clinic image">
-    </section>
-
-    <section class="hero-section page-section" id="about" data-matching-link="#about-link">
-        <div class="wrapper">
+    <section class="hero-section page-section bg4" id="services" data-matching-link="#services-link">
+        <div class="wrapper--narrow">
             <h1 class="animate-character">We are the Pioneers & No. 1 in Wellness Healthcare Industry</h1>
-            <div class="hero-section__desc">
-                <h3>About Us</h3>
-                <p>A well established Dubai based business organization having successful history since 1957 in the middle east and has marked its presence globally.</p>
-                <p>A group of leading global business tycoons, royal family members, doctors & professionals are joining hand in hand to conquer the 10 trillion dollar industry.</p>
-
-                <h3>Core Strength</h3>
-                <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span>Business foundation in the Middle East since 1957</li>
-                    <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span>Medical Clinics since 1978</li>
-                    <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span>Laboratories since 1985</li>
-                    <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span>Health & Fitness centers since 2010</li>
-                    <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span>Beauty & Aesthetic centers since 2011</li>
-                    <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span>Wellness Hospitals since 2018</li>
-                    <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span>Food supplements trading since 2020</li>
-                </ul>
-            </div>
-            <div class="hero-section__image">
-                <img class="p-20" src="assets/images/clinic-img1.jpg" alt="clinic image">
-
-                <img class="p-20" src="assets/images/clinic-img2.jpg" alt="clinic image">
-            </div>
         </div>
-    </section>
-
-    <section class="mvs page-section" id="mvs" data-matching-link="#mvs-link">
-        <div class="wrapper--narrow">
-            <div class="mvs__desc">
-                <h2>Vision & Mission</h2>
-                
-                <h3>To achieve our great vision of a disease free world</h3>
-                <p><i>we are providing world class health facilities globally by combining the ultra modern western treatments & artificial intelligence with ancient eastern wisdom, miracle organic, medicines & evidence based wellness programs.</i></p>
-
-                <h3>Create a strong foundation for a healthier new generation</h3>
-                <p><i>through 1000 wellness clinics & 100 wellness resorts by 2030 to achieve a 100 years of healthier life expectancy.</i></p>
-
-                <h3>For the betterment of mankind, create a supportive community</h3>
-                <p><i>of like minded individuals who are committed to improving their health & well being as well as of others.</i></p>
-            </div>
-        </div>
-        
-        <div class="splash">
-            <img class="splash__img" src="assets/images/flasher.png" alt="just an glowing image">
-        </div>
-    </section>    
-
-    <section class="hero-section page-section" id="services" data-matching-link="#services-link">
-        <div class="wrapper--narrow">
+        <div class="wrapper--narrow">  
             <div class="hero-section__image service-image">
-                <img src="assets/images/poly-clinic.jpg" alt="Clinic image">
+                <img src="assets/images/poly-clinic.png" alt="Clinic image">
             </div>
                 
             <div class="hero-section__desc">
-                <h3>Wellness Poly Clinic</h3>
+                <h3 class="bdr">Wellness Poly Clinic</h3>
                 <p>A luxury Wellness poly clinic offering high-end medical facilities that upscale experience to its patients. We offer specialized medical services for :</p>
     
                 <ul class="fa-ul">
@@ -176,10 +131,10 @@
 
     </section>
 
-    <section class="hero-section">  
+    <section class="hero-section bg5">  
         <div class="wrapper--narrow">        
             <div class="hero-section__desc">
-                <h3>Clinic Highlights</h3>
+                <h3 class="bdr">Clinic Highlights</h3>
 
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span> High-end infra: The clinic will have high end medical equipments and an aesthetically pleasing modern design with premium furnishings and fixtures.</li>
@@ -191,7 +146,7 @@
                 
             </div>
             <div class="hero-section__image service-image">
-                <img src="assets/images/highlights.jpg" alt="Clinic image">
+                <img src="assets/images/highlights.png" alt="Clinic image">
             </div>
         </div> 
 
@@ -200,14 +155,14 @@
         </div>
     </section>
 
-    <section class="hero-section">
+    <section class="hero-section bg6">
         <div class="wrapper--narrow">
             <div class="hero-section__image service-image">
-                <img src="assets/images/medicine.jpg" alt="Clinic highlights image">
+                <img src="assets/images/medicine.png" alt="Clinic highlights image">
             </div>
                 
             <div class="hero-section__desc">
-                <h3>General, Internal & Family Medicine</h3>
+                <h3 class="bdr">General, Internal & Family Medicine</h3>
                 <p>We follow medical practice that focus on the diagnosis, treatment, and prevention of illness and disease.</p>
 
                 <ul class="fa-ul">
@@ -221,10 +176,10 @@
         </div>
     </section>
 
-    <section class="hero-section">
+    <section class="hero-section bg7">
         <div class="wrapper--narrow">         
             <div class="hero-section__desc">
-                <h3>Pediatrics & Clinic for differently abled children</h3>
+                <h3 class="bdr">Pediatrics & Clinic for differently abled children</h3>
 
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span> Dubai's population has grown significantly in recent years, with a growing number of families and children in the city. This has led to an increased demand for pediatric services.</li>
@@ -234,7 +189,7 @@
                 </ul>
             </div>
             <div class="hero-section__image service-image">
-                <img src="assets/images/pediatrics.jpg" alt="Clinic image">
+                <img src="assets/images/pediatrics.png" alt="Clinic image">
             </div>
         </div>
 
@@ -243,13 +198,13 @@
         </div>
     </section>
 
-    <section class="hero-section">
+    <section class="hero-section bg4">
         <div class="wrapper--narrow">
             <div class="hero-section__image service-image">
-                <img src="assets/images/gynaecology.jpg" alt="Clinic image">
+                <img src="assets/images/gynaecology.png" alt="Clinic image">
             </div>         
             <div class="hero-section__desc">
-                <h3>Gynaecology & Obstetrics</h3>
+                <h3 class="bdr">Gynaecology & Obstetrics</h3>
 
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span> To generate a healthier generation ,we should follow healthier life style practices during pregnancy.</li>
@@ -261,10 +216,10 @@
 
     </section>
 
-    <section class="hero-section">
+    <section class="hero-section bg5">
         <div class="wrapper--narrow">          
             <div class="hero-section__desc">
-                <h3>Aesthetics & Cosmetology</h3>
+                <h3 class="bdr">Aesthetics & Cosmetology</h3>
 
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span> The growth of aesthetics services in UAE has crossed one billion.</li>
@@ -276,7 +231,7 @@
                 </ul>
             </div>
             <div class="hero-section__image service-image">
-                <img src="assets/images/aesthetics.jpg" alt="Clinic image">
+                <img src="assets/images/aesthetics.png" alt="Clinic image">
             </div>
         </div>
 
@@ -285,13 +240,13 @@
         </div>
     </section>
 
-    <section class="hero-section">
+    <section class="hero-section bg6">
         <div class="wrapper--narrow">
             <div class="hero-section__image service-image">
-                <img src="assets/images/psychology.jpg" alt="Clinic image">
+                <img src="assets/images/psychology.png" alt="Clinic image">
             </div>         
             <div class="hero-section__desc">
-                <h3>Clinical psychology, Healing & Physiotherapy</h3>
+                <h3 class="bdr">Clinical psychology, Healing & Physiotherapy</h3>
 
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span> Mental health is an essential aspect of overall health and well-being. It affects how we think, feel,  behave and impacts our ability to cope with stress, maintain healthy relationships and function in our daily lives. We also need to be physically fit to have a healthy mind hence exercise is equally important.</li>
@@ -303,10 +258,10 @@
         </div>
     </section>
 
-    <section class="hero-section">
+    <section class="hero-section bg7">
         <div class="wrapper--narrow">           
             <div class="hero-section__desc">
-                <h3>Dermatology & Laser Treatments</h3>
+                <h3 class="bdr">Dermatology & Laser Treatments</h3>
 
                 <ul class="fa-ul"> 
                     <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span> Dubai is a hub for dermatology and laser treatments, offering a wide range of advanced procedures and treatments for various skin conditions and concern.</li>
@@ -315,22 +270,24 @@
                 </ul>
             </div>
             <div class="hero-section__image service-image">
-                <img src="assets/images/dermatology.jpg" alt="Clinic image">
+                <img src="assets/images/dermatology.png" alt="Clinic image">
             </div>
         </div>
 
-        <div class="splash">
-            <img class="splash__img" src="assets/images/flasher.png" alt="just an glowing image">
-        </div>
+        
     </section>
 
-    <section class="hero-section">
+    <div class="splash">
+        <img class="splash__img" src="assets/images/flasher.png" alt="just an glowing image">
+    </div>
+
+    <section class="hero-section bg4">
         <div class="wrapper--narrow">
             <div class="hero-section__image service-image">
-                <img src="assets/images/dental.jpg" alt="Clinic image">
+                <img src="assets/images/dental.png" alt="Clinic image">
             </div>          
             <div class="hero-section__desc">
-                <h3>Dental</h3>
+                <h3 class="bdr">Dental</h3>
 
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span> The growth of dental services in Dubai is largely due to the city's strong economy, which has attracted a diverse range of people from around the world.</li>
@@ -342,10 +299,10 @@
 
     </section>
 
-    <section class="hero-section">
+    <section class="hero-section bg5">
         <div class="wrapper--narrow">           
             <div class="hero-section__desc">
-                <h3>Ayurveda</h3>
+                <h3 class="bdr">Ayurveda</h3>
                 <p>Ayurveda reconnects our mind, body and soul with ultimate source of healing.</p>
 
                 <ul class="fa-ul">
@@ -357,7 +314,7 @@
                 </ul>
             </div>
             <div class="hero-section__image service-image">
-                <img src="assets/images/ayurveda.jpg" alt="Clinic image">
+                <img src="assets/images/ayurveda.png" alt="Clinic image">
             </div>
         </div>
 
@@ -366,13 +323,13 @@
         </div>
     </section>
 
-    <section class="hero-section">
+    <section class="hero-section bg6">
         <div class="wrapper--narrow">
             <div class="hero-section__image service-image">
-                <img src="assets/images/healthcare.jpg" alt="Clinic image">
+                <img src="assets/images/healthcare.png" alt="Clinic image">
             </div>           
             <div class="hero-section__desc">
-                <h3>Home Healthcare</h3>
+                <h3 class="bdr">Home Healthcare</h3>
 
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-circle-chevron-right"></i></span> Our home care health services allow individuals to receive medical care and support in the comfort of their own homes.</li>
@@ -384,38 +341,10 @@
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">        
-        <form action="cntc.php" method="POST">
-            <div class="contact wrapper">
-                <h2>Contact Us</h2>            
-                <div class="contact-item">
-                    <label>Your Name</label>
-                    <input type="text" class="contact-item__input" name="name" required>
-                </div>
-                <div class="contact-item">
-                    <label>Your Email</label>
-                    <input type="email" class="contact-item__input" name="email" required>
-                </div>
-                <div class="contact-item">
-                    <label>Your Phone No.</label>
-                    <input type="text" class="contact-item__input" name="phone" required>
-                </div>
-                <div class="contact-item">
-                    <label>Your Message</label>
-                    <textarea name="message" class="contact-item__input" rows="4" required></textarea>
-                </div>
-                <div class="contact-item">
-                    <input type="submit" name="submit" class="btn contact-item__btn" value="Submit">
-                </div>
-            </div>
-        </form>
-    </section>
-
-    <section class="mvs">
+    <section class="mvs bg-black">
         <div class="wrapper">
             <div class="mvs__desc">
-                <h3>We invite like minded people to encash the benefits from world's fastest growing industry as well as to be a part of the noble vision of <br> <q>Disease free world</q></h3>
+                <h3>We invite like minded people to encash the benefits from world's fastest growing industry as well as to be a part of the noble vision of <q>Disease free world</q></h3>
                 
                 <h2>Invest in Health,</h2>
                 <h2>Invest in Future!</h2>
@@ -437,27 +366,29 @@
                 <span><i class="fa-solid fa-location-dot"></i></span>
                 <p>
                     Armani Clinics, <br>
-                    Business Bay, <br>
-                    DUBAI U.A.E.
+                    Elite downtown,
+                    Burjkhalifa Street,
+                    Dubai UAE
                 </p>
             </div>
             <div>
                 <span><i class="fa-solid fa-mobile"></i></span>
                 <p>
-                    Landline: 046667675 <br>
-                    Mobile: +971 56 520 5030
+                    Landline: 048347465 <br>
+                    Mobile: +971 54 888 3700
                 </p>
             </div>
             <div>
                 <span><i class="fa-regular fa-envelope"></i></span>
-                <p>armani-clinics@gmail.com</p>
+                <p>info@armaniclinics.com</p>
             </div>              
         </div>
-        <p class="footer-text">Copyright &copy; 2023 All Rights Reserved by <b>Armani Clinics</b></p>
+        <div class="footer-text"><p>Copyright &copy; 2023 All Rights Reserved by <b>Armani Clinics</b></p></div>
     </footer>
-
+    </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
     <script src="bundled.js"></script>
+    <script src="assets/scripts/modules/slider.js"></script>
 </body>
 </html>

@@ -1,3 +1,46 @@
+.loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);
+}
+.loader img{
+    animation: zoom-in-zoom-out 2s ease infinite;
+    width: 200px;
+    @mixin atMedium {
+        width: auto;
+    }
+}
+
+@keyframes zoom-in-zoom-out {
+    /*0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }*/
+    to {
+        transform: rotateY(360deg);
+    }
+  }
+
+.hide-loader{
+    display: none;
+}
+
+.whole-section {
+   display: none;
+}
+
+.show-section {
+    display: block;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -16,58 +59,90 @@ img {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     @mixin atMedium {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
+    color: $white;
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
 }
 
 h1 {
     font-size: 1.6rem;
+    @mixin textGradient;
+
     @mixin atMedium {
         font-size: 2.8rem;
-        color: $gold;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 4rem;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Niconne';
-    color: $gold;
+    @mixin textGradient;
 
     @mixin atMedium {
         margin: 0;
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 500;
     }
 }
 
 h3 {
-    color: $darkpurple;
     font-size: 1.3rem;
+    display: inline-block;
+    text-align: center;
+    @mixin textGradient;
 
     @mixin atMedium {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
 
+.bdr {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+    animation: border-pulse 2s ease-in-out infinite;
+    /*border-image: linear-gradient(to right, $gold, $lightgold, $gold) 1;*/
+
+    &:hover {
+        border-image: linear-gradient(to right, $gold, $darkpurple, $gold);
+        border-image-slice: 1;
+        animation: none;
+    }
+
+    @keyframes border-pulse {
+        0% {
+           border-color: $gold;
+        }
+        50% {
+           border-color: $darkpurple;
+        }
+        100% {
+           border-color: $gold;
+        }
+     }
+}
+
 .splash {
-    background: linear-gradient(45deg, $lightpurple, $darkpurple, $black);
+    background: #000;
     text-align: center;
-    margin: 2rem 0;
 
     @mixin atMedium {
-        margin: 0 0 4rem 0;
+        margin: 0;
     }
 
     &__img {
         width: 120px;
 
         @mixin atMedium {
-            width: 200px;
+            width: 150px;
         }
     }
 }
@@ -76,8 +151,23 @@ h3 {
     padding: 1.25rem;
 }
 
-@mixin atMedium {
-    #services, #mvs {
-        scroll-margin-top: 2rem;
+.mt-2 {
+    margin-top: 2.2rem !important;
+}
+
+.txt-ctr {
+    margin: auto;
+}
+
+/* Reveal on Scroll */
+.reveal-item { 
+    opacity: 0;
+    transition: opacity .3s ease-out, transform .3s ease-out;
+    transform: scale(1.15);
+
+    &--is-visible {
+        opacity: 1;
+        transform: scale(1);
     }
 }
+/* Reveal on Scroll */

@@ -1,9 +1,15 @@
 footer {
-    background: $black;
-    color: $gold;
+    background: #000;
 
     p {
         font-size: 1.1rem;
+        font-family: 'EB Garamond', serif;
+        font-weight: 500;
+        @mixin textGradient;
+
+        @mixin atMedium {
+            font-size: 1.3rem;
+        }
     }
     
 }
@@ -18,12 +24,19 @@ footer {
     }    
 
     &__logo {
-        width: 150px;
-        color: #FFF;
+        width: 120px;
         margin: 0 auto 1.5rem auto; 
         @mixin atMedium {
+            width: 150px;
             margin: 0;
         }
+    }
+}
+
+.footer > div {
+    margin-top: 2.5rem;
+    @mixin atMedium {
+        margin-top: 0;
     }
 }
 
@@ -34,18 +47,21 @@ footer {
 }
 
 footer .fa-solid, footer .fa-regular {
+    @mixin textGradient;
     font-size: 2rem;
 }
 
 .go-to-top {
     position: fixed;
-    bottom: 50px;
-    right: 30px;
+    bottom: 100px;
+    right: 20px;
+    @mixin atMedium {
+        right: 30px;
+    }
     z-index: 99;
-    color: $gold;
     font-size: 2rem;
 
     a {
-        color: $gold;
+        @mixin textGradient;
     }
 }
