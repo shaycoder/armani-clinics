@@ -13,6 +13,10 @@ new RevealOnScroll(document.querySelectorAll(".hero-section ul li"), 85);
 
 new Loader();
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
 if(module.hot) {
     module.hot.accept()
 }
