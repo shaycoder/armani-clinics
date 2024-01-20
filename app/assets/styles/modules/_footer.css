@@ -53,14 +53,13 @@ footer .fa-solid, footer .fa-regular {
 
 .go-to-top {
     position: fixed;
-    bottom: 100px;
+    bottom: 50px;
     right: 20px;
     @mixin atMedium {
         right: 30px;
     }
     z-index: 99;
-    font-size: 2rem;
-
+    font-size: 1.5rem;
     a {
         @mixin textGradient;
     }
@@ -68,14 +67,27 @@ footer .fa-solid, footer .fa-regular {
 
 .whatsapp {
     position: fixed;
-    bottom: 50px;
+    bottom: 150px;
     right: 20px;
     @mixin atMedium {
         right: 30px;
     }
     z-index: 99;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    a {
+        @mixin textGradient;
+    }
+}
 
+.modal-sec {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    @mixin atMedium {
+        right: 30px;
+    }
+    z-index: 99;
+    font-size: 1.5rem;
     a {
         @mixin textGradient;
     }

@@ -1,4 +1,35 @@
 .mvs {
     text-align: center;
+    /*background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);*/
+    background-image: url('./assets/images/bg-medium.jpg');
+
+    @mixin forSmall {
+        background-image: url('./assets/images/bg-small.jpg');
+    }
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: repeat;
+
+    /* Background image is fixed in the viewport so that it doesn't move when
+    the content's height is greater than the image's height */
+    /*background-attachment: fixed;*/
+
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size: cover;
+
+    /* Set a background color that will be displayed
+    while the background image is loading */
+    background-color: $grey;
+
+    h2, h3, p, li, .fa-li {
+        @mixin textBlackGradient;
+    }
+}
+
+.bottom-sec {
+    text-align: center;
     background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);
 }

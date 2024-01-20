@@ -1,5 +1,5 @@
 .hero-section {
-    background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);  
+    /*background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);*/
     
     &__image {
         @mixin atMedium {
@@ -27,7 +27,6 @@
 
         h3 {
             margin-top: 1.2rem;
-            color: $gold;
 
             @mixin atMedium {
                 margin-top: 0;
@@ -62,3 +61,24 @@
         }
     }
 }
+
+.bg1, .bg3, .bg4, .bg5, .bg7, .bg9, .bg11, .bg13, .bg15, .bg17, .bg19 {
+    background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);
+}
+
+.bg2, .bg4, .bg6, .bg8, .bg10, .bg12, .bg14, .bg16, .bg18, .bg20 {
+    background-image: url('./assets/images/bg-medium.jpg');
+
+    @mixin forSmall {
+        background-image: url('./assets/images/bg-small.jpg');
+    }
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F2EEEB;
+
+    h3, p, li, .fa-li {
+        @mixin textBlackGradient;
+    }
+}
+
