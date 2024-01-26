@@ -50,7 +50,7 @@
 
             &::file-selector-button {
                 font-family: 'EB Garamond', serif;
-                font-weight: bolder;
+                font-weight: bold;
                 color: $darkpurple;
                 padding: 0.5em;
                 border: thin solid grey;
