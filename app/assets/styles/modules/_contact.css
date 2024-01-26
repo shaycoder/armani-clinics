@@ -47,6 +47,15 @@
                 padding: .75rem 1.2rem;
             }
             border-radius: 5px;
+
+            &::file-selector-button {
+                font-family: 'EB Garamond', serif;
+                font-weight: bolder;
+                color: $darkpurple;
+                padding: 0.5em;
+                border: thin solid grey;
+                border-radius: 3px;
+            }
             
         }
 
