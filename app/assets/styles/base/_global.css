@@ -171,3 +171,9 @@ h3 {
     }
 }
 /* Reveal on Scroll */
+
+.mob-element {
+    @mixin atMedium {
+        display: none;
+    }
+}
