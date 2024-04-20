@@ -81,7 +81,7 @@ h1 {
     }
 }
 
-h2 {
+h2, .inner-main-heading {
     font-size: 2rem;
     font-family: 'Niconne';
     @mixin textGradient;
@@ -176,4 +176,8 @@ h3 {
     @mixin atMedium {
         display: none;
     }
+}
+
+.d-block {
+    object-fit: cover;
 }

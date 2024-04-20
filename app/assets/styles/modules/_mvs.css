@@ -24,8 +24,26 @@
     while the background image is loading */
     background-color: $grey;
 
-    h2, h3, p, li, .fa-li {
+    h1, h3, p, li, .fa-li {
         @mixin textBlackGradient;
+    }
+
+    &__text {
+        text-align: left;
+        line-height: 1.8;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-family: 'Niconne';
+
+        @mixin atMedium {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 500;
+        }
     }
 }
 

@@ -14,10 +14,6 @@ new RevealOnScroll(document.querySelectorAll(".team-section ul li"), 100);
 
 new Loader();
 
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-
 if(module.hot) {
     module.hot.accept()
 }

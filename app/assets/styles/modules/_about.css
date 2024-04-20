@@ -18,13 +18,21 @@
         }
         
         &__desc {
-            h3 {
+            h1, h2 {
                 margin-top: 1.2rem;
                 /*color: $gold;*/
     
                 @mixin atMedium {
                     margin-top: 0;
                 }
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 2rem;
             }
     
             ul {
@@ -54,7 +62,7 @@
                 }
             }
 
-            h3, p, li, .fa-li {
+            h1, h2, p, li, .fa-li {
                 @mixin textBlackGradient;
             }
         }
@@ -71,5 +79,9 @@
                 transform: scale(1.1);
             }
         }
+    }
+
+    &__text {
+        color: $black;
     }
 }
