@@ -6,6 +6,7 @@ footer {
         font-family: 'EB Garamond', serif;
         font-weight: 500;
         @mixin textGradient;
+        margin-block: 1rem;
 
         @mixin atMedium {
             font-size: 1.3rem;
@@ -17,10 +18,12 @@ footer {
 .footer {
     display: block;
     text-align: center;
+    padding: 20px;
 
     @mixin atMedium {
         display: flex;
         justify-content: space-evenly;
+        padding: 3.5rem 0;
     }    
 
     &__logo {
