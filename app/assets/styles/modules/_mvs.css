@@ -31,7 +31,7 @@
     &__text {
         text-align: left;
         line-height: 1.8;
-        margin: 0;
+        margin-block: 1rem;
         padding-top: 0;
     }
 
@@ -40,10 +40,15 @@
         font-family: 'Niconne';
 
         @mixin atMedium {
-            margin: 0;
+            margin-block: 1.2rem;
             font-size: 3rem;
             font-weight: 500;
         }
+    }
+
+    h3 {
+        margin-block: 1.2rem;
+        font-weight: 600;
     }
 }
 

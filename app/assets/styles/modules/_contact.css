@@ -5,8 +5,8 @@
         background-size: cover;
     }
 
-    h2 {
-        margin-bottom: 2rem;
+    h1 {
+        margin-block: 2rem;
     }
 }
 
@@ -64,7 +64,8 @@
             margin-top: 3rem;
             background: linear-gradient(90deg, $gold, $lightgold, $gold); 
             color: $black;
-            padding: 0.7rem 1.6rem;
+            font-weight: 500;
+            padding: 0.3rem 1.5rem;
             border-radius: 2rem;
             text-decoration: none;
             font-size: 1.2rem;

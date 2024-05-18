@@ -5,8 +5,8 @@ footer {
         font-size: 1.1rem;
         font-family: 'EB Garamond', serif;
         font-weight: 500;
-        @mixin textGradient;
         margin-block: 1rem;
+        color: $lightgold;
 
         @mixin atMedium {
             font-size: 1.3rem;
