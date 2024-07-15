@@ -12,6 +12,10 @@ footer {
             font-size: 1.3rem;
         }
     }
+
+    a {
+        color: $lightgold;
+    }
     
 }
 

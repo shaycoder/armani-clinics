@@ -23,6 +23,10 @@
     <!-- Favicon -->
 
     <script src="https://kit.fontawesome.com/0febe8b076.js" crossorigin="anonymous"></script>
+
+    <style>
+        .website{ display:none; }
+    </style>
 </head>
 <body>
     <div class="loader">
@@ -56,7 +60,8 @@
     <section id="contact">        
         <form action="career-details.php" method="POST" enctype="multipart/form-data">
             <div class="contact wrapper">
-                <h1 class="inner-main-heading">Career Opportunities with <br> Armani Clinics</h1>            
+                <h1 class="inner-main-heading">Career Opportunities with <br> Armani Clinics</h1>
+                <input name="website" type="text" class="website"/>        
                 <div class="contact-item">
                     <label>Your Name</label>
                     <input type="text" class="contact-item__input" name="name" required>
@@ -113,7 +118,8 @@
             <div>
                 <span><i class="fa-regular fa-envelope"></i></span>
                 <p>
-                    info@armaniclinics.com
+                    info@armaniclinics.com <br>
+                    <span class="mr-2"><a href="https://www.instagram.com/armani_clinics/" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a></span> <span><a href="https://www.facebook.com/people/Armani-Clinics/61557650447087/?mibextid=ZbWKwL" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a></span>
                 </p>
             </div>              
         </div>
