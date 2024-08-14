@@ -6,6 +6,7 @@
     align-items: center;
     background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);
 }
+
 .loader img{
     animation: zoom-in-zoom-out 2s ease infinite;
     width: 200px;
@@ -15,26 +16,13 @@
 }
 
 @keyframes zoom-in-zoom-out {
-    /*0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1.2, 1.2);
-    }
-    100% {
-      transform: scale(1, 1);
-    }*/
     to {
         transform: rotateY(360deg);
     }
-  }
-
-.hide-loader{
-    display: none;
 }
 
-.whole-section {
-   display: none;
+.hide-loader, .whole-section {
+    display: none;
 }
 
 .show-section {
@@ -109,7 +97,6 @@ h3 {
     border: 2px solid transparent;
     transition: border 0.5s ease;
     animation: border-pulse 2s ease-in-out infinite;
-    /*border-image: linear-gradient(to right, $gold, $lightgold, $gold) 1;*/
 
     &:hover {
         border-image: linear-gradient(to right, $gold, $darkpurple, $gold);

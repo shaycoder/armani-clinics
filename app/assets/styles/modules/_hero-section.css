@@ -1,6 +1,4 @@
 .hero-section {
-    /*background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);*/
-    
     &__image {
         @mixin atMedium {
             flex: 0 0 50%;
