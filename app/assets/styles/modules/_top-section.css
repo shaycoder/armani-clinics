@@ -1,0 +1,60 @@
+.top-section {
+    h3 {
+        padding: .2rem 1rem;
+        font-size: 1.5rem;
+    }
+    h3 {
+        @mixin forSmall {
+            padding: 1.25rem;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .list-split {
+        @mixin atMedium {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+
+    &__upper {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        @mixin atMedium {
+            margin: 2rem 0;
+        }
+
+        p {
+            @mixin forSmall {
+                margin: 0;
+            }
+        }
+    }
+
+    &__bottom {
+        display: grid;
+        place-items: start;
+        @mixin atMedium {
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        img {
+            transition: transform 1s ease-out;
+            padding: 1rem;
+            @mixin atMedium {
+                padding: 0 3rem;
+            }
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

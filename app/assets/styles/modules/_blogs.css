@@ -1,0 +1,31 @@
+.blogs {
+    background: #f7f7f7;
+    h2 {
+        margin-bottom: 3rem;
+    }
+    &__item {
+        display: grid;
+        @mixin atMedium {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        gap: 2rem;
+
+        .blog-item {
+            border-radius: 25px;
+            padding: 1.2rem;
+            background: rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            @mixin textBlackGradient;
+        }
+
+        p {
+            color: $black;
+        }
+
+        .blog_info {
+            margin-top: 1.2rem;
+        }
+    }
+}

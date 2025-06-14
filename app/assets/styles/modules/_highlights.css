@@ -1,0 +1,28 @@
+.highlights-section {
+    h2 {
+        @mixin forSmall {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .highlights {
+        display: grid;
+        place-items: center;
+        gap: 2rem;
+        @mixin atMedium {
+            grid-template-columns: 1fr 1fr;
+        }
+        &__image {
+            transition: transform 1s ease-out;
+            padding: 3rem;
+            @mixin forSmall {
+                padding: 1rem;
+            }
+    
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -29,20 +29,36 @@
     </style>
 </head>
 <body>
-    <div class="loader">
-        <img class="logo-loader" src="assets/images/logo.png" alt="Armani Clinics Logo">
-    </div>
-    <div class="whole-section">
-    <header class="site-header" id="top">
+    <header class="site-header inner-header" id="top">
         <div class="site-header__logo">
             <img src="assets/images/logo.png" alt="Armani Clinics Logo">
         </div>
         <nav class="site-header__nav">
             <ul>
-                <li><a class="menu-element" id="home-link" href="index">Home</a></li>
+                <li><a class="menu-element" id="home-link" href="/">Home</a></li>
                 <li><a class="menu-element" id="about-link" href="about">About us</a></li>
                 <li><a class="menu-element" id="mvs-link" href="mission-vision">Vision & Mission</a></li>
-                <li><a class="menu-element" id="services-link" href="index">Services</a></li>
+                <li>
+                    <a id="services-link" href="#departments" aria-label="Show departments">Departments</a>
+                    <span>
+                        <ul>
+                            <li><a href="medicine">General, Internal & Family Medicine</a></li>
+                            <li><a href="pediatrics">Pediatrics</a></li>
+                            <li><a href="gynaecology">Gynecology & Obstetrics</a></li>
+                            <li><a href="dermatology">Dermatology</a></li>
+                            <li><a href="aesthetics">Aesthetics & Laser</a></li>
+                            <li><a href="dental">Dental</a></li>
+                            <li><a href="orthopedic">Orthopedic</a></li>
+                            <li><a href="physiotherapy">Physiotherapy</a></li>
+                            <li><a href="ayurveda">Ayurveda</a></li>
+                            <li><a href="yoga">Yoga</a></li>
+                            <li><a href="personal-care">Beauty & Personal care</a></li>
+                            <li><a href="ems">Electronic Muscle Simulator (EMS)</a></li>
+                            <li><a href="home-care">Home Healthcare</a></li>
+                        </ul>
+                    </span>
+                </li>
+                
                 <li><a class="menu-element" href="careers">Careers</a></li>
                 <li><a class="menu-element mob-element" href="contact">Contact Us</a></li>
             </ul>
@@ -60,7 +76,7 @@
     <section id="contact">        
         <form action="career-details.php" method="POST" enctype="multipart/form-data">
             <div class="contact wrapper">
-                <h1 class="inner-main-heading">Career Opportunities with <br> Armani Clinics </h1>
+                <h1 class="sub-heading-two">Career Opportunities with <br> Armani Clinics </h1>
                 <input name="website" type="text" class="website"/>        
                 <div class="contact-item">
                     <label>Your Name</label>
@@ -95,6 +111,9 @@
 
     <!-- Footer -->
     <footer>
+        <div class="splash">
+            <img loading="lazy" class="splash__img" width="838" height="311" src="assets/images/flasher.png" alt="just an glowing image">
+        </div>
         <div class="footer">
             <div class="footer__logo">
                 <img src="assets/images/logo.png" alt="logo in the footer section" width="200" height="200">
@@ -111,7 +130,7 @@
             <div>
                 <span><i class="fa-solid fa-mobile"></i></span>
                 <p>
-                    +971 56 914 1000, <br>
+                    +971 54 772 1000, <br>
                     +971 4 456 1000
                 </p>
             </div>
@@ -125,6 +144,19 @@
         </div>
         <div class="footer-text"><p>Copyright &copy; 2023 All Rights Reserved by <b>Armani Clinics</b></p></div>
     </footer>
+
+    <!-- Large modal -->
+    <div class="modal fade pickup-drop-modal-lg" tabindex="-1" role="dialog" aria-labelledby="pickup-drop" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <a href="https://api.whatsapp.com/send?phone=971547721000"><div class="modal-content">
+                <img loading="lazy" width="1600" height="900" src="assets/images/pickup-drop.webp" alt="Pickup/Drop Patients image">
+            </div>
+        </a>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
 </body>
 </html>

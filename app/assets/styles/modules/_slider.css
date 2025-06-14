@@ -1,7 +1,0 @@
-.carousel-item img {
-  height: auto;
-  width: 100vw;
-  @mixin atMedium {
-      height: 90vh;
-  }
-}

@@ -1,0 +1,28 @@
+.inner-section {
+    display: grid;
+    gap: 1rem;
+    @mixin atMedium {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    &__image {
+        place-self: center;
+        @mixin forSmall {
+            margin-bottom: 1rem;
+            order: 2;
+        }
+        @mixin atMedium {
+            padding: 3rem;
+        }   
+        transition: transform 1s ease-out;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+
+    &__desc {
+        place-self: center;
+    }
+}

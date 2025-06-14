@@ -1,32 +1,5 @@
-.loader {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);
-}
-
-.loader img{
-    animation: zoom-in-zoom-out 2s ease infinite;
-    width: 200px;
-    @mixin atMedium {
-        width: auto;
-    }
-}
-
-@keyframes zoom-in-zoom-out {
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
-.hide-loader, .whole-section {
+.whole-section {
     display: none;
-}
-
-.show-section {
-    display: block;
 }
 
 html {
@@ -37,7 +10,7 @@ body {
     font-family: 'EB Garamond', serif;
 }
 
-img {
+img, video {
     max-width: 100%;
     height: auto;
 }
@@ -51,7 +24,6 @@ p {
     @mixin atMedium {
         font-size: 1.2rem;
     }
-    color: $white;
     line-height: 1.6;
     font-family: 'Lato', sans-serif;
 }
@@ -59,21 +31,31 @@ p {
 h1 {
     font-size: 1.6rem;
     @mixin textGradient;
+    text-align: center;
 
     @mixin atMedium {
         font-size: 2.8rem;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 0;
     }
 }
 
-h2, .inner-main-heading {
+.sub-heading {
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    margin-top: 1.2rem;
+    font-family: EB Garamond, serif;
+    margin-bottom: 1.2rem;
+
+    @mixin atMedium {
+        margin-top: 0;
+        font-size: 1.8rem;
+    }
+}
+
+.sub-heading-two {
     font-size: 2rem;
     font-family: 'Niconne';
     @mixin textGradient;
-
     @mixin atMedium {
         margin: 0;
         font-size: 3rem;
@@ -82,15 +64,48 @@ h2, .inner-main-heading {
 }
 
 h3 {
-    font-size: 1.3rem;
     display: inline-block;
     text-align: center;
     @mixin textGradient;
-
+    font-size: 1.3rem;
     @mixin atMedium {
         font-size: 1.7rem;
     }
 }
+
+ul {
+    list-style-type: none;
+}
+
+
+ul.fa-ul li {
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+
+    @mixin atMedium {
+        font-size: 1.1rem;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+            color: $lightgold;
+        }
+    }
+}
+
+.fa-li {
+    &:hover {   
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
 
 .bdr {
     padding: 10px 20px;
@@ -118,7 +133,7 @@ h3 {
 }
 
 .splash {
-    background: #000;
+    background-color: $black;
     text-align: center;
 
     @mixin atMedium {
@@ -134,16 +149,12 @@ h3 {
     }
 }
 
-.p-20 {
-    padding: 1.25rem;
-}
-
 .mr-2 {
     margin-right: .5rem !important;
 }
 
-.txt-ctr {
-    margin: auto;
+.m-block {
+    margin-block: 1rem;
 }
 
 /* Reveal on Scroll */
@@ -165,6 +176,80 @@ h3 {
     }
 }
 
-.d-block {
-    object-fit: cover;
+i {
+    text-rendering: optimizeLegibility;
+}
+
+.icons {
+    background: linear-gradient(30deg, $darkpurple, $black, $darkpurple);
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    @mixin forSmall {
+        bottom: 10%;
+    }
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+
+
+    .side-icon {
+        @mixin textGradient;
+        font-size: 1.5rem;
+        padding: .5rem 1rem;
+        max-height: 500px;
+    }
+
+    .whatsapp, .insta {
+        font-size: 1.8rem;
+    }
+}
+
+.bg2 {
+    background: linear-gradient(5deg, #F2EEEB, #F2EEEB, #E5DCD7, #E5DCD7, #F2EEEB, #F2EEEB);
+
+    h1, h2, h3, p, li, .fa-li i {
+        @mixin textBlackGradient;
+    }
+
+    h1 {
+        display: inline-block;
+    }
+}
+
+.bg1 {
+    background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);
+    padding: 1rem;
+    @mixin atMedium {
+        padding: 5rem 3rem;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        color: $grey;
+    }
+}
+
+.hero {
+    display: flex;
+    background-color: #F2EEEB;
+    width: 100%;
+    position: relative;
+}
+
+.offerModal .modal-content {
+    background: linear-gradient(45deg, $darkpurple, $black, $darkpurple);
+}
+
+.offerModal .modal-header h5 {
+    color: $lightgold;
+} 
+
+.offerModal .modal-header {
+    display: flex;
+    justify-content: center;
+    border-bottom-color: $lightgold;
 }

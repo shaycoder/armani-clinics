@@ -6,7 +6,7 @@
     }
 
     h1 {
-        margin-block: 2rem;
+        margin-block: 1rem;
     }
 }
 
@@ -15,14 +15,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
 
     .contact-item {
         display: flex;
         flex-direction: column;
-        width: 70vw;
-        @mixin atMedium {
-            width: 40vw;
-        }
+        width: 100%;
         margin-bottom: 1rem;
 
         label {
@@ -79,7 +78,6 @@
             }
         }
     }
+
+    .website { display: none; }
 }
-
-
-

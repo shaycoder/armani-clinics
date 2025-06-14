@@ -2,14 +2,16 @@ class Loader {
     constructor() {
         this.loader = document.querySelector('.loader');
         this.body = document.querySelector('.whole-section');
-        this.init();
+        if(this.loader) {
+            this.init();
+        }
     }
 
     init() {
         setTimeout(() => {
-            this.loader.classList.add('hide-loader');
-            this.body.classList.add('show-section');
-        }, 4000)
+            this.loader.style.display = 'none';
+            this.body.style.display = 'block';
+        }, 6000)
     }
 }
 
