@@ -18,6 +18,10 @@
             display: flex;
             gap: 2rem;
         }
+
+        ul li, .fa-li i {
+             @mixin textBlackGradient;
+        }
     }
 
     &__upper {

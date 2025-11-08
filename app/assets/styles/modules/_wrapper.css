@@ -11,6 +11,10 @@
         }
     }
 
+    &--no-top {
+        padding-top: 0;
+    }
+
     &--heading {
         display: flex;
         justify-content: center;

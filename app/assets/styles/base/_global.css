@@ -8,6 +8,7 @@ html {
 
 body {
     font-family: 'EB Garamond', serif;
+    background: linear-gradient(5deg, #F2EEEB, #F2EEEB, #E5DCD7, #E5DCD7, #F2EEEB, #F2EEEB);
 }
 
 img, video {
@@ -29,12 +30,13 @@ p {
 }
 
 h1 {
-    font-size: 1.6rem;
-    @mixin textGradient;
+    font-size: 2.05rem;
+    @mixin textBlackGradient;
     text-align: center;
-
+    font-family: 'Niconne';
+    margin-top: 2rem;
     @mixin atMedium {
-        font-size: 2.8rem;
+        font-size: 3.05rem;
     }
 }
 
